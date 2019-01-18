@@ -4,5 +4,5 @@
 0 10 * * * /home/pi/powerTvOn.sh
 */10 * * * * /home/pi/updateModemState.sh
 */10 * * * * /home/pi/net_tester
-20 5 * * *  /home/pi/rebootSystem.sh
+20 5 * * 1  /home/pi/rebootSystem.sh
 
