@@ -1,9 +1,8 @@
-FROM resin/%%RESIN_MACHINE_NAME%%-debian
-# :latest
+FROM resin/%%RESIN_MACHINE_NAME%%-debian:latest
 #FROM arm32v7/debian:stretch-slim
 MAINTAINER d Odige <dodige@gmail.com>
 
-
+RUN sed -i '/jessie-updates/{s/^/#/}' /etc/apt/sources.list
 #CMD modprobe i2c-dev && python /app/demo.py
 
 RUN apt-get update && \
